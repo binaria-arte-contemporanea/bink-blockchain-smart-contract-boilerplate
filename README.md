@@ -1,23 +1,42 @@
 # BINK
-Bink é um token desenvolvido pela Galeria Binaria Arte Contemporânea.
+Bink é um projeto desenvolvido pela Galeria Binaria Arte Contemporânea.
 
-### ART
-O simbolo do token Bink é ART$, pensado diretamente para ser um Token brasileiro de referência no mercado da arte contemporânea.
-O máximo de tokens disponíveis é: 5.000.000 ART.
+### Desenvolvimento:
+Instalação das dependências
+VSCode
+- Solidity
 
-### BEP20
-Este contrado foi desenvolvido através da rede BEP20 dentro da Binance Smart Chain.
-https://bscscan.com/token/0x170D146C19DBda013318D5AF08B6F3FB8c22AEF1
-https://bscscan.com/address/0x170D146C19DBda013318D5AF08B6F3FB8c22AEF1
+NPM
+- @openzeppelin/contracts: 4.4.1
+- ganache-cli: ^6.12.2
+- truffle: ^5.4.24,
 
-Contrato: 0x170D146C19DBda013318D5AF08B6F3FB8c22AEF1
+```
+npm install
+```
 
-## Metamask
-Para utilizar os recursos da Bink, adicione o Token em sua Metamask:
-Contrato: 0x170D146C19DBda013318D5AF08B6F3FB8c22AEF1
-Simbolo: ART$
-Decimais: 18
+Comandos
+```
+$ npm run console // Abre console do Truffle
+$ npm run compile // Compila os contratos
+$ npm run ganache // Inicia blockchain de desenvolvimento
+$ npm run migrate // Deploy dos contratos
 
-## Exchange | Compra & Venda
-[PancakeSwap](https://pancakeswap.finance/info/token/0x170D146C19DBda013318D5AF08B6F3FB8c22AEF1)
-[Poopcoin](https://poocoin.app/tokens/0x170D146C19DBda013318D5AF08B6F3FB8c22AEF1)
+```
+
+### Wallets de Desenvolvimento
+Mnemonic: 'capital render evoke link link candy viable moon fringe sunny early shiver'
+
+```
+# package.json => "ganache": "./node_modules/.bin/ganache-cli
+$ ganache-cli -d -m 'capital render evoke link link candy viable moon fringe sunny early shiver'
+```
+
+### Setup Metamask (Local)
+Ganache-CLI 
+- Network Name: Ganache CLI
+- RPC: 127.0.0.1:8545
+- Chain ID: 1337
+- Currency Symbol: ETH
+
+Importe as chaves privadas do console($ npm run ganache) para o Metamask

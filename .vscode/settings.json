@@ -1,0 +1,5 @@
+{
+  "solidity.defaultCompiler": "localNodeModule",
+  "solidity.packageDefaultDependenciesContractsDirectory": "contracts",
+  "solidity.packageDefaultDependenciesDirectory": "/node_modules"
+}
