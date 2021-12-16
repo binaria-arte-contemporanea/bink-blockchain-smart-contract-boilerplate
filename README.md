@@ -3,6 +3,7 @@ Bink é um projeto desenvolvido pela Galeria Binaria Arte Contemporânea.
 
 ### Desenvolvimento:
 Instalação das dependências
+
 OS:
 - Linux
 - OSX

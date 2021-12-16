@@ -1,6 +1,7 @@
 
 // /dev.env = Desenvolvimento local
 // /prod.end = Produção/Testnet
+
 require('dotenv').config({path: __dirname + '/dev.env'});
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
