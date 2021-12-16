@@ -56,6 +56,12 @@ Importe as chaves privadas do console (```$ npm run ganache```) para o Metamask
 # Mainnet (live), Testnet (live), Desenvolvimento (local)
 
 ### DotEnv
+Renomear e alterar as chaves: 
+```
+$ mv sample-dev.env dev.env
+$ mv sample-prod.env prod.env
+```
+
 Arquivo: ```truffle.config.js```
 ```
 # /dev.env: Desenvolvimento (local)
