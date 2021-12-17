@@ -16,8 +16,9 @@ VSCode:
 
 NPM:
 - @openzeppelin/contracts: 4.4.1
+- @truffle/hdwallet-provider: ^2.0.0
 - ganache-cli: ^6.12.2
-- truffle: ^5.4.24,
+- truffle: ^5.4.24
 
 #### Bootstrap
 Conjunto de funções iniciais para:
