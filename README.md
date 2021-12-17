@@ -17,16 +17,30 @@ NPM:
 - ganache-cli: ^6.12.2
 - truffle: ^5.4.24,
 
+#### Bootstrap
+Conjunto de funções iniciais para:
+* Instalar dependências;
+* Configurar arquivos de ambiente (dev.env);
+* Executar blockchain local via ganache (para acessar as carteiras disponíveis vá em: ./log/ganache.log) em background;
+* Compila todos os contratos existentes *.sol;
+* Realiza deploy do contrato na blockchain local;
+* Retorna o log da blockchain para tela (para sair: CTRL+C);
+
 ```
-npm install
+$ npm run init
 ```
 
-Comandos
+Para manipular o contrato leia: Configurações no Metamask (local). 
+
+#### Comandos
 ```
+$ npm run init // Inicia bootstrap com deploy de token ERC20 local
+
 # Para desenvolvimento
 $ npm run console // Abre console do Truffle
 $ npm run compile // Compila os contratos
 $ npm run ganache // Inicia blockchain de desenvolvimento
+$ npm run ganache-clean // Inicia blockchain de desenvolvimento com novas carteiras
 $ npm run migrate // Deploy dos contratos
 
 # Para produção (padrão: Matic)
@@ -35,8 +49,11 @@ $ npm run deploy-mainnet // Deploy Mainnet
 
 ```
 
-### Wallets de Desenvolvimento
+### Wallets de Desenvolvimento - Ganache
 Mnemonic: 'capital render evoke link link candy viable moon fringe sunny early shiver'
+
+Após reiniciar o Ganache será criada uma nova blockchain com a mesma carteira e saldos anteriores.
+Caso deseje criar novas carteiras utilize o comando: ```$npm run ganache-clean```
 
 ```
 # Script integrado com as variáveis do ambiênte UNIX => scripts/ganache.sh
@@ -44,7 +61,7 @@ Mnemonic: 'capital render evoke link link candy viable moon fringe sunny early s
 $ ganache-cli -d -m 'capital render evoke link link candy viable moon fringe sunny early shiver'
 ```
 
-### Setup Metamask (local)
+### Configurações no Metamask (local)
 Ganache-CLI 
 - Network Name: Ganache CLI
 - RPC: 127.0.0.1:8545
@@ -103,3 +120,14 @@ testnet: {
   skipDryRun: true
 }
 ```
+
+### Logs
+Todos os logs e acontecimentos são guardados em: ```./log```
+Relatorios para leitura disponíveis:
+
+```
+ganache.log => Referentes à blockchain como: host, wallets, public keys e private keys (desenvolvimento)
+deploy-local.log => Processo de deploy para blockchain de forma local (desenvolvimento)
+deploy-testnet.log => Processo de deploy para blockchain de testes (produção)
+deploy-mainnet.log => Processo de deploy para blockchain principal (produção)
+``` 
