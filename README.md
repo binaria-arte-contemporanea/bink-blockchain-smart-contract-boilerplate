@@ -39,7 +39,7 @@ Para manipular o contrato leia: Configurações no Metamask (local).
 $ npm run quick-start // Inicia bootstrap com deploy de token ERC20 local
 
 # Para desenvolvimento
-$ npm run console // Abre console do Truffle
+$ npm run console // Abre console do truffle
 $ npm run compile // Compila os contratos
 $ npm run ganache // Inicia blockchain de desenvolvimento
 $ npm run ganache-clean // Inicia blockchain de desenvolvimento com novas carteiras
@@ -63,14 +63,62 @@ Caso deseje criar novas carteiras utilize o comando: ```$npm run ganache-clean``
 $ ganache-cli -d -m 'capital render evoke link link candy viable moon fringe sunny early shiver'
 ```
 
-### Configurações no Metamask (local)
+### Manipulando contrato: Configurações no Metamask (local) e Console
+
+#### Metamask (local)
 Ganache-CLI 
 - Network Name: Ganache CLI
 - RPC: 127.0.0.1:8545
 - Chain ID: 1337
 - Currency Symbol: ETH
 
-Importe as chaves privadas do console (```$ npm run ganache```) para o Metamask
+Importe as chaves privadas do console (```$ npm run ganache``` logs: ```./log/ganache.log```) para o Metamask
+
+#### Console
+Iniciando console para manipulação dos SmartContracts ```$ npm run console``` 
+
+Crie uma instancia para manipular o contrato:
+```
+let instancia = await contrato.deployed()
+instancia.[Métodos do contrato]
+```
+
+A nomeclatura: instancia e contrato devem ser definidas. Na parte de contrato, verificar a linha: ```contract NOME is ERC20``` 
+
+Exemplo de manipulação: ```contract/Nft.sol```
+```
+> let nftDemo = await.Nft.deployed()
+> nftDemo.nftItem("0x092AcB1eAD95f3B8a888Cb07335874501DAf863F","https://exemplo.com/nft.json")
+
+{
+  tx: '0x354f3d54036d101e823712a29de93e31a5f2e441264857e962e460329f95aacf',
+  receipt: {
+    transactionHash: '0x354f3d54036d101e823712a29de93e31a5f2e441264857e962e460329f95aacf',
+    blockHash: '0xc0ae6e4caf05b63c02cfe038d2f8e9aae0139433f0a0c673e5673bcafac9976a',
+    ...
+    from: '0xbabe8a24132beaa53df9bae9f6ef308357132c2a',
+    to: '0xe573cc2ffef963fa225e9b3d29085b35c030b526',
+    ...
+  }
+}
+
+> nftDemo.ownerOf(1)
+"0x092AcB1eAD95f3B8a888Cb07335874501DAf863F"
+
+> nftDemo.tokenURI(1)
+"https://exemplo.com/nft.json"
+
+```
+
+Exemplo de JSON para NFT:
+```
+{
+    "name": "NFT #001",
+    "description": "Exemplo de NFT #001",
+    "image": "https://exemplo.com/assets/nft-001.png",
+    "author": "Jon Doe"
+}
+```
 
 # Mainnet (live), Testnet (live), Desenvolvimento (local)
 

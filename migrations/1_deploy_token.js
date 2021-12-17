@@ -1,5 +1,5 @@
-const Bink = artifacts.require("BinkToken");
+const BinkToken = artifacts.require("Token");
 
 module.exports = function (deployer) {
-  deployer.deploy(Bink);
+  deployer.deploy(BinkToken);
 };

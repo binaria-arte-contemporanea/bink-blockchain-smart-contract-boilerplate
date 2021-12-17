@@ -16,7 +16,7 @@
     "dotenv": "^10.0.0"
   },
   "scripts": {
-    "quick-start": "./scripts/bootstrap.sh",
+    "quick-start": "./scripts/quick-start.sh",
     "console": "./node_modules/.bin/truffle console",
     "compile": "./node_modules/.bin/truffle compile | tee ./log/compile.log",
     "deploy-local": "./node_modules/.bin/truffle migrate | tee ./log/deploy-local.log",
