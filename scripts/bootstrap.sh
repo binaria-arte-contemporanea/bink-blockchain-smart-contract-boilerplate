@@ -11,7 +11,7 @@ npm install
 echo "======================================================"
 echo "Renomendo ambiênte de desenvolvimento"
 echo "======================================================"
-mv sample-dev.env dev.env
+mv sample-dev.env dev.env & cp dev.env sample-dev.env
 
 echo "======================================================"
 echo "Executando Ganache Blockchain Local"

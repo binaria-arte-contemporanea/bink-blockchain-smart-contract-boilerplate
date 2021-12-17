@@ -1,5 +1,5 @@
 {
-  "name": "bink-smart-contract",
+  "name": "bink-blockchain-framework",
   "version": "1.0.0",
   "description": "Bink é um projeto desenvolvido pela Galeria Binaria Arte Contemporânea.",
   "main": "truffle-config.js",
@@ -16,7 +16,7 @@
     "dotenv": "^10.0.0"
   },
   "scripts": {
-    "init": "./scripts/bootstrap.sh",
+    "quick-start": "./scripts/bootstrap.sh",
     "console": "./node_modules/.bin/truffle console",
     "compile": "./node_modules/.bin/truffle compile | tee ./log/compile.log",
     "deploy-local": "./node_modules/.bin/truffle migrate | tee ./log/deploy-local.log",
@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/binaria-arte-contemporanea/bink-smart-contract.git"
+    "url": "git+https://github.com/binaria-arte-contemporanea/bink-blockchain-framework.git"
   },
   "author": "Binaria Arte Contemporânea",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/binaria-arte-contemporanea/bink-smart-contract/issues"
+    "url": "https://github.com/binaria-arte-contemporanea/bink-blockchain-framework/issues"
   },
-  "homepage": "https://github.com/binaria-arte-contemporanea/bink-smart-contract#readme"
+  "homepage": "https://github.com/binaria-arte-contemporanea/bink-blockchain-framework#readme"
 }

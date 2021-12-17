@@ -27,14 +27,14 @@ Conjunto de funções iniciais para:
 * Retorna o log da blockchain para tela (para sair: CTRL+C);
 
 ```
-$ npm run init
+$ npm run quick-start
 ```
 
 Para manipular o contrato leia: Configurações no Metamask (local). 
 
 #### Comandos
 ```
-$ npm run init // Inicia bootstrap com deploy de token ERC20 local
+$ npm run quick-start // Inicia bootstrap com deploy de token ERC20 local
 
 # Para desenvolvimento
 $ npm run console // Abre console do Truffle
@@ -122,7 +122,8 @@ testnet: {
 ```
 
 ### Logs
-Todos os logs e acontecimentos são guardados em: ```./log```
+Todos os logs e acontecimentos são guardados em: ```./log``` de forma temporária. Quando re-executado todos os arquivos serão reescritos.
+
 Relatorios para leitura disponíveis:
 
 ```
