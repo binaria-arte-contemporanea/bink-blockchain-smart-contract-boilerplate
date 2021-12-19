@@ -1,5 +1,5 @@
-# BINK Blockchain Framework
-O Bink Blockchain Framework é um template utilizado para desenvolvimento de aplicações blockchain baseadas na rede Ethereum e derivadas de forma simples e didática.
+# BINK Blockchain Smart Contract Boilerplate
+O Bink Blockchain Smart Contract Boilerplate (BBSCB) é um template utilizado para desenvolvimento de aplicações blockchain baseadas na rede Ethereum e derivadas de forma simples e didática.
 
 Bink é um projeto desenvolvido pela Galeria Binaria Arte Contemporânea.
 
