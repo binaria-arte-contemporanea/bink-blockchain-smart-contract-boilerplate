@@ -1,5 +1,5 @@
 {
-  "name": "bink-blockchain-framework",
+  "name": "bink-blockchain-smart-contract-boilerplate",
   "version": "1.0.0",
   "description": "Bink é um projeto desenvolvido pela Galeria Binaria Arte Contemporânea.",
   "main": "truffle-config.js",
@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/binaria-arte-contemporanea/bink-blockchain-framework.git"
+    "url": "git+https://github.com/binaria-arte-contemporanea/bink-blockchain-smart-contract-boilerplate.git"
   },
   "author": "Binaria Arte Contemporânea",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/binaria-arte-contemporanea/bink-blockchain-framework/issues"
+    "url": "https://github.com/binaria-arte-contemporanea/bink-blockchain-smart-contract-boilerplate/issues"
   },
-  "homepage": "https://github.com/binaria-arte-contemporanea/bink-blockchain-framework#readme"
+  "homepage": "https://github.com/binaria-arte-contemporanea/bink-blockchain-smart-contract-boilerplate#readme"
 }

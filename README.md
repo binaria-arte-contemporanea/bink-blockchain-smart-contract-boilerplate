@@ -1,6 +1,8 @@
 # BINK Blockchain Smart Contract Boilerplate
 O Bink Blockchain Smart Contract Boilerplate (BBSCB) é um template utilizado para desenvolvimento de aplicações blockchain baseadas na rede Ethereum e derivadas de forma simples e didática.
 
+Para integração dos contratos e desenvolvimento de Dapps: [Bink Blockchain Angular Boilerplate](https://github.com/binaria-arte-contemporanea/bink-blockchain-angular-boilerplate)
+
 Bink é um projeto desenvolvido pela Galeria Binaria Arte Contemporânea.
 
 ### Desenvolvimento:
@@ -49,7 +51,6 @@ $ npm run migrate // Deploy dos contratos
 # Para produção (padrão: Matic)
 $ npm run deploy-testnet // Deploy Testnet
 $ npm run deploy-mainnet // Deploy Mainnet
-
 ```
 
 ### Wallets de Desenvolvimento - Ganache
@@ -108,7 +109,6 @@ Exemplo de manipulação: ```contract/Nft.sol```
 
 > nftDemo.tokenURI(1)
 "https://exemplo.com/nft.json"
-
 ```
 
 Exemplo de JSON para NFT:
@@ -136,7 +136,7 @@ Arquivo: ```truffle.config.js```
 # /prod.env: Produção (mainnet, testnet)
 
 require('dotenv').config({path: __dirname + '/dev.env'});
-``` 
+```
 
 ```
 # dev.env | prod.env
@@ -182,4 +182,4 @@ ganache.log => Referentes à blockchain como: host, wallets, public keys e priva
 deploy-local.log => Processo de deploy para blockchain de forma local (desenvolvimento)
 deploy-testnet.log => Processo de deploy para blockchain de testes (produção)
 deploy-mainnet.log => Processo de deploy para blockchain principal (produção)
-``` 
+```
